@@ -15,9 +15,19 @@ const HeroSection = () => {
               <span className="block text-[#f159b2]">Learn, Act, and Deliver</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-300 mb-6 leading-relaxed">
               Geisel Software builds agentic AI systems that don't just analyze data; they decide, act, and optimize real-world outcomes.
             </p>
+
+            {/* Business Value Statement */}
+            <div className="bg-[#dcf448]/10 border border-[#dcf448]/30 rounded-lg p-6 mb-8">
+              <p className="text-lg font-semibold text-[#dcf448] mb-2">
+                🎯 Solve Your Business Challenges & Increase Efficiency
+              </p>
+              <p className="text-gray-300">
+                Our custom AI agents tackle your specific operational pain points, automate complex decision-making, and deliver measurable improvements to your bottom line.
+              </p>
+            </div>
 
             <p className="text-lg text-gray-400 mb-12">
               We design AI agents that don't just process data—they make decisions, learn from experience, and autonomously pursue your business goals. From robotics and automation to intelligent process optimization, we build systems that work for you.
