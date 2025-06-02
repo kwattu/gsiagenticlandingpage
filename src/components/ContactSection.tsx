@@ -1,16 +1,11 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, Globe, ArrowRight } from "lucide-react";
-
 const ContactSection = () => {
-  return (
-    <section id="contact" className="py-20 bg-gray-900">
+  return <section id="contact" className="py-20 bg-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Get Started?
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to go from Dashboards to Decision?</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
             Book a 30-minute discovery call to put agentic AI to work for you!
           </p>
@@ -50,15 +45,13 @@ const ContactSection = () => {
               <div className="w-16 h-16 bg-[#dcf448]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Globe className="w-8 h-8 text-[#dcf448]" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Visit Our Website</h3>
+              <h3 className="text-lg font-semibold text-white mb-2">Complete our</h3>
               <p className="text-gray-400 mb-2">Learn more about us</p>
               <p className="text-[#dcf448] font-medium">geisel.software</p>
             </CardContent>
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
