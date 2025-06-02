@@ -72,7 +72,7 @@ const AboutSection = () => {
 
         {/* Vision Statement */}
         <div className="text-center bg-gradient-to-r from-[#f159b2]/10 to-[#51B3EA]/10 border border-[#dcf448]/20 rounded-2xl p-12">
-          <h3 className="text-xl font-semibold text-white mb-6">
+          <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Leading the Agentic AI Era
           </h3>
           <p className="text-lg text-gray-300 mb-6 max-w-4xl mx-auto leading-relaxed">
