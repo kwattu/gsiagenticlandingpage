@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Brain, Cog, Shield, Users } from "lucide-react";
 
@@ -61,7 +60,7 @@ const ServicesSection = () => {
         {/* Trust Section */}
         <div className="text-center bg-[#0a0119] border border-[#dcf448]/20 rounded-2xl p-8">
           <p className="text-lg text-gray-300 mb-4">
-            <strong className="text-[#dcf448]">NASA, Amazon Robotics,</strong> and other leading companies trust Geisel Software for AI that drives real-world results—built on decades of expertise in software, robotics, and automation.
+            <strong className="text-[#dcf448]">NASA and industry-leading companies</strong> trust Geisel Software for AI that drives real-world results—built on decades of expertise in software, robotics, and automation.
           </p>
         </div>
       </div>
