@@ -15,7 +15,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
-              src="/lovable-uploads/c9b54469-2d6b-4ce5-af1d-9f9ec3f3adba.png" 
+              src="/lovable-uploads/0099637a-bed0-4431-9613-e56422eb4d10.png" 
               alt="Geisel Software" 
               className="h-8"
             />
