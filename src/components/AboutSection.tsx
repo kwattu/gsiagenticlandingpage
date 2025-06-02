@@ -1,67 +1,86 @@
 
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Users, Award, TrendingUp } from "lucide-react";
+import { Shield, Zap, Target, CheckCircle } from "lucide-react";
 
 const AboutSection = () => {
-  const stats = [
-    { number: "50+", label: "Projects Completed", icon: CheckCircle },
-    { number: "25+", label: "Happy Clients", icon: Users },
-    { number: "5+", label: "Years Experience", icon: Award },
-    { number: "99%", label: "Success Rate", icon: TrendingUp },
-  ];
-
   return (
-    <section id="about" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Content */}
+    <section id="about" className="py-20 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Left Column - Security First */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              About Geiesl Software
+              Security and Reliability First
             </h2>
-            <p className="text-lg text-gray-600 mb-6">
-              We are a team of passionate software engineers and consultants dedicated to 
-              delivering innovative solutions that drive business growth. Our expertise spans 
-              across modern web technologies, cloud platforms, and enterprise software development.
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Our rigorous engineering process ensures your AI solutions are safe, secure, and trustworthy—so you can innovate with confidence.
             </p>
-            <p className="text-lg text-gray-600 mb-8">
-              Founded with the vision to bridge the gap between technology and business needs, 
-              we focus on creating scalable, maintainable, and user-centric software solutions 
-              that stand the test of time.
-            </p>
-
+            
             <div className="space-y-4 mb-8">
               <div className="flex items-start space-x-3">
                 <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                <span className="text-gray-700">Expert team with diverse technical backgrounds</span>
+                <span className="text-gray-700">Rigorous security protocols and testing</span>
               </div>
               <div className="flex items-start space-x-3">
                 <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                <span className="text-gray-700">Agile development methodology</span>
+                <span className="text-gray-700">Decades of expertise in software and robotics</span>
               </div>
               <div className="flex items-start space-x-3">
                 <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                <span className="text-gray-700">Commitment to quality and innovation</span>
+                <span className="text-gray-700">Trusted by leading organizations worldwide</span>
               </div>
             </div>
-
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-              Learn More About Us
-            </Button>
           </div>
 
-          {/* Right Column - Stats */}
-          <div className="grid grid-cols-2 gap-6">
-            {stats.map((stat, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 text-center shadow-sm border border-gray-100">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <stat.icon className="w-6 h-6 text-blue-600" />
+          {/* Right Column - Visual */}
+          <div className="relative">
+            <div className="bg-gray-50 rounded-2xl p-8">
+              <div className="grid grid-cols-1 gap-6">
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                    <Shield className="w-6 h-6 text-orange-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Enterprise Security</h3>
+                    <p className="text-sm text-gray-600">Safe and trustworthy AI systems</p>
+                  </div>
                 </div>
-                <div className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</div>
-                <div className="text-sm text-gray-600">{stat.label}</div>
+                
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                    <Zap className="w-6 h-6 text-orange-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Proven Results</h3>
+                    <p className="text-sm text-gray-600">Real-world operational improvements</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                    <Target className="w-6 h-6 text-orange-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Goal-Oriented</h3>
+                    <p className="text-sm text-gray-600">Built around your objectives</p>
+                  </div>
+                </div>
               </div>
-            ))}
+            </div>
           </div>
+        </div>
+
+        {/* Vision Statement */}
+        <div className="text-center bg-orange-50 rounded-2xl p-12">
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+            Leading the Agentic AI Era
+          </h3>
+          <p className="text-lg text-gray-700 mb-6 max-w-4xl mx-auto leading-relaxed">
+            We're leading the charge into the agentic AI era where systems don't just respond, but proactively reason, adapt, and take action.
+          </p>
+          <p className="text-xl font-semibold text-orange-600">
+            Accelerate innovation and streamline your operations with next-gen intelligence built around your goals.
+          </p>
         </div>
       </div>
     </section>
