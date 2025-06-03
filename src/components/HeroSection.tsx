@@ -86,37 +86,6 @@ const HeroSection = () => {
             <p className="text-gray-400">Proven systems that drive operational efficiency</p>
           </div>
         </div>
-
-        {/* Additional Visual Section - moved below the fold */}
-        <div className="grid md:grid-cols-2 gap-8 mt-20 mb-16">
-          <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop" 
-              alt="AI Robotics Technology" 
-              className="w-full h-64 object-cover rounded-2xl"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0119]/70 to-transparent rounded-2xl flex items-end">
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">Robotics & Automation</h3>
-                <p className="text-gray-300">Advanced AI systems for physical world applications</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop" 
-              alt="AI Technology Infrastructure" 
-              className="w-full h-64 object-cover rounded-2xl"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0119]/70 to-transparent rounded-2xl flex items-end">
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">Intelligent Systems</h3>
-                <p className="text-gray-300">Custom AI solutions built for your infrastructure</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

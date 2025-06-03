@@ -70,51 +70,6 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Technology Showcase */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop" 
-              alt="AI Development" 
-              className="w-full h-48 object-cover rounded-xl"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0119]/80 to-transparent rounded-xl flex items-end">
-              <div className="p-4">
-                <h4 className="text-lg font-semibold text-white">AI Development</h4>
-                <p className="text-gray-300 text-sm">Custom algorithms and models</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop" 
-              alt="Data Analysis" 
-              className="w-full h-48 object-cover rounded-xl"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0119]/80 to-transparent rounded-xl flex items-end">
-              <div className="p-4">
-                <h4 className="text-lg font-semibold text-white">Data Intelligence</h4>
-                <p className="text-gray-300 text-sm">Advanced analytics and insights</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop" 
-              alt="System Integration" 
-              className="w-full h-48 object-cover rounded-xl"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0119]/80 to-transparent rounded-xl flex items-end">
-              <div className="p-4">
-                <h4 className="text-lg font-semibold text-white">System Integration</h4>
-                <p className="text-gray-300 text-sm">Seamless enterprise solutions</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Vision Statement */}
         <div className="text-center bg-gradient-to-r from-[#f159b2]/10 to-[#51B3EA]/10 border border-[#dcf448]/20 rounded-2xl p-12">
           <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
