@@ -40,7 +40,7 @@ const Header = () => {
           {/* Desktop CTA */}
           <div className="hidden md:flex">
             <Button className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white font-medium">
-              Book Discovery Call
+              Book Session
             </Button>
           </div>
 
@@ -70,7 +70,7 @@ const Header = () => {
               </a>
               <div className="px-3 py-2">
                 <Button className="w-full bg-[#f159b2] hover:bg-[#f159b2]/80 text-white font-medium">
-                  Book Discovery Call
+                  Book Session
                 </Button>
               </div>
             </div>
