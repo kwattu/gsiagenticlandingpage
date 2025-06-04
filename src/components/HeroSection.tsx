@@ -36,7 +36,7 @@ const HeroSection = () => {
           <div className="relative">
             <div className="relative">
               <img 
-                src="/lovable-uploads/cda415e2-1cca-45bc-8c23-5db81fb8ab3c.png" 
+                src="/lovable-uploads/27dfd834-7b6d-4d2f-8013-fab67f9361c8.png" 
                 alt="Multiagent AI Systems boosting operational efficiency by up to 30%" 
                 className="w-full h-auto rounded-2xl"
               />
