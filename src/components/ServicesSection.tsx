@@ -40,23 +40,23 @@ const ServicesSection = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="space-y-8 mb-16">
           {services.map((service, index) => (
-            <Card key={index} className="bg-[#0a0119] border-[#f159b2]/20 hover:shadow-lg hover:shadow-[#f159b2]/10 transition-all duration-300">
-              <CardHeader className="pb-4">
-                <div className="w-12 h-12 bg-[#f159b2]/20 rounded-lg flex items-center justify-center mb-4">
-                  <service.icon className="w-6 h-6 text-[#f159b2]" />
+            <div key={index} className="flex gap-6 items-start">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-[#f159b2] rounded-full flex items-center justify-center text-white text-xl font-bold">
+                  {index + 1}
                 </div>
-                <CardTitle className="text-xl font-semibold text-white">
+              </div>
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold text-white mb-3">
                   {service.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
+                </h3>
                 <p className="text-gray-400 leading-relaxed">
                   {service.description}
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
 
