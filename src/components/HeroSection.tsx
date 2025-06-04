@@ -51,8 +51,8 @@ const HeroSection = () => {
           <div className="relative">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                alt="Multiagent AI Systems - Connected displays showing collaborative AI agents" 
+                src="/lovable-uploads/cda415e2-1cca-45bc-8c23-5db81fb8ab3c.png" 
+                alt="Multiagent AI Systems boosting operational efficiency by up to 30%" 
                 className="w-full h-auto rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0119]/50 to-transparent rounded-2xl"></div>
