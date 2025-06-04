@@ -40,7 +40,7 @@ const ServicesSection = () => {
           </h2>
         </div>
 
-        <div className="space-y-8 mb-16">
+        <div className="space-y-8">
           {services.map((service, index) => (
             <div key={index} className="flex gap-6 items-start">
               <div className="flex-shrink-0">
@@ -58,13 +58,6 @@ const ServicesSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Trust Section */}
-        <div className="text-center bg-[#0a0119] border border-[#dcf448]/20 rounded-2xl p-8">
-          <p className="text-lg text-gray-300 mb-4">
-            <strong className="text-[#dcf448]">NASA and industry-leading companies</strong> trust Geisel Software for AI that drives real-world results—built on decades of expertise in software, robotics, and automation.
-          </p>
         </div>
       </div>
     </section>
