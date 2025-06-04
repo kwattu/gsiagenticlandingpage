@@ -18,9 +18,8 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="text-center md:text-right">
-            <p className="text-gray-400 mb-1">JR Rodrigues</p>
-            <p className="text-gray-400 mb-1">(508) 936-5097</p>
-            <p className="text-gray-400">jr@geisel-software.com</p>
+            <p className="text-gray-400 mb-1">(508) 936-5099</p>
+            <p className="text-gray-400">transcend@geisel-software.com</p>
           </div>
         </div>
 
