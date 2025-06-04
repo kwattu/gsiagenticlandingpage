@@ -23,27 +23,12 @@ const HeroSection = () => {
               From robotics and automation to intelligent process optimization, we build AI systems that work autonomously for you.
             </p>
 
-            {/* CTA and Stats in same row on larger screens */}
-            <div className="flex flex-col lg:flex-row lg:items-center lg:gap-8 mb-12">
-              <div className="mb-6 lg:mb-0">
-                <Button size="lg" className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-lg px-8 py-4 group">
-                  Get 2-3 pilot-ready AI ideas!
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </div>
-
-              {/* Enhanced Stats */}
-              <div className="bg-[#51B3EA]/10 border border-[#51B3EA]/20 rounded-xl p-6 lg:flex-1">
-                <div className="flex items-center gap-4">
-                  <div>
-                    <p className="text-3xl font-bold text-[#dcf448]">30%</p>
-                    <p className="text-sm text-gray-300">efficiency boost</p>
-                  </div>
-                  <div className="text-gray-300 text-sm">
-                    <strong>Proven results:</strong> Companies using multiagent AI systems see 30% efficiency increases within 90 days
-                  </div>
-                </div>
-              </div>
+            {/* CTA Button */}
+            <div className="mb-12">
+              <Button size="lg" className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-lg px-8 py-4 group">
+                Get 2-3 pilot-ready AI ideas!
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
             </div>
           </div>
 
