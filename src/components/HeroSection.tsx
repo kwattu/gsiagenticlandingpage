@@ -16,7 +16,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              Custom agentic AI systems that decide, act, and optimize real-world outcomes to increase your efficiency.
+              We build intelligent systems that act—autonomously, instantly, and meaningfully.
             </p>
 
             <p className="text-lg text-gray-400 mb-8">
