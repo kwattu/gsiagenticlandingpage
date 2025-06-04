@@ -1,27 +1,33 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, Cog, Shield, Users } from "lucide-react";
+import { Search, Lightbulb, Code, Cog, TrendingUp } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Users,
-      title: "Strategic AI Consulting",
-      description: "Expert guidance to identify the best agentic AI opportunities for your business goals and operational needs."
+      icon: Search,
+      title: "Discovery & Opportunity Mapping",
+      description: "We start by understanding your business, workflows, and systems to identify high-impact use cases for agentic AI—focusing on areas where autonomous decision-making can create measurable value."
     },
     {
-      icon: Brain,
-      title: "Custom Agentic AI Development",
-      description: "Tailored AI agents that learn, reason, and act autonomously to optimize your specific business processes."
+      icon: Lightbulb,
+      title: "Solution Design & Feasibility",
+      description: "Our team collaborates with your stakeholders to architect a fit-for-purpose solution, leveraging modular, explainable AI components, with clear ROI targets and pilot-ready scopes."
+    },
+    {
+      icon: Code,
+      title: "Custom Development",
+      description: "From training to integration, we build intelligent agents that perceive, decide, act, and learn—safely and autonomously—tailored to your environment, whether it's robotics, operations, or edge systems."
     },
     {
       icon: Cog,
-      title: "Seamless System Integration",
-      description: "Professional integration with your existing systems and workflows for smooth, unified operations."
+      title: "Integration & Deployment",
+      description: "We ensure seamless deployment into your existing tech stack—cloud, edge, embedded, or hybrid—and validate the system's behavior in real-world conditions."
     },
     {
-      icon: Shield,
-      title: "Ongoing Optimization",
-      description: "Continuous monitoring, learning, and enhancement to ensure your AI systems deliver maximum value."
+      icon: TrendingUp,
+      title: "Optimization & Support",
+      description: "Our partnership doesn't end at deployment. We continue refining models, enhancing performance, and incorporating new learnings into the system—keeping your AI as adaptive as your business."
     }
   ];
 
@@ -30,14 +36,11 @@ const ServicesSection = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            End-to-End Partnership
+            From Insight to Action
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            From ideation to deployment and beyond, Geisel Software is your trusted partner at every step. We offer:
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
             <Card key={index} className="bg-[#0a0119] border-[#f159b2]/20 hover:shadow-lg hover:shadow-[#f159b2]/10 transition-all duration-300">
               <CardHeader className="pb-4">
