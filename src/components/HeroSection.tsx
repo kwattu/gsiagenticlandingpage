@@ -20,7 +20,7 @@ const HeroSection = () => {
             </p>
 
             <p className="text-lg text-gray-400 mb-8">
-              From robotics and automation to intelligent process optimization, we build AI systems that work autonomously for you.
+              From robotics to intelligent workflows, we design AI systems that don't just analyze data—they act on it. Our agentic AI solutions make real-time decisions, adapt to change, and deliver measurable outcomes without constant oversight.
             </p>
 
             {/* CTA Button */}
