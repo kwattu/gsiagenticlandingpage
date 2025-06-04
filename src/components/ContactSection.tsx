@@ -1,11 +1,9 @@
-
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
+    <section id="contact" className="py-20 bg-[#f159b2]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to go from Dashboards to Decisions?</h2>
@@ -24,4 +22,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-
