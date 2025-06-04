@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Brain, Target, Zap } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -42,33 +42,6 @@ const HeroSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0119]/50 to-transparent rounded-2xl"></div>
             </div>
-          </div>
-        </div>
-
-        {/* Value Props - moved up to be above the fold */}
-        <div className="grid md:grid-cols-3 gap-8 mt-16">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-[#f159b2]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Brain className="w-8 h-8 text-[#f159b2]" />
-            </div>
-            <h3 className="text-xl font-semibold text-white mb-2">Intelligent Decision Making</h3>
-            <p className="text-gray-400">AI that reasons, adapts, and takes action autonomously</p>
-          </div>
-          
-          <div className="text-center">
-            <div className="w-16 h-16 bg-[#dcf448]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Target className="w-8 h-8 text-[#dcf448]" />
-            </div>
-            <h3 className="text-xl font-semibold text-white mb-2">Goal-Oriented Systems</h3>
-            <p className="text-gray-400">Built around your specific business objectives</p>
-          </div>
-          
-          <div className="text-center">
-            <div className="w-16 h-16 bg-[#51B3EA]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Zap className="w-8 h-8 text-[#51B3EA]" />
-            </div>
-            <h3 className="text-xl font-semibold text-white mb-2">Real-World Results</h3>
-            <p className="text-gray-400">Proven systems that drive operational efficiency</p>
           </div>
         </div>
       </div>
