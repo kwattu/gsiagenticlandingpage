@@ -32,27 +32,27 @@ const HeroSection = () => {
                 </Button>
               </div>
 
-              {/* Compact Stats */}
+              {/* Enhanced Stats */}
               <div className="bg-[#51B3EA]/10 border border-[#51B3EA]/20 rounded-xl p-6 lg:flex-1">
                 <div className="flex items-center gap-4">
                   <div>
                     <p className="text-3xl font-bold text-[#dcf448]">30%</p>
-                    <p className="text-sm text-gray-300">efficiency increase</p>
+                    <p className="text-sm text-gray-300">efficiency boost</p>
                   </div>
-                  <div className="text-gray-400 text-sm">
-                    Companies using multiagent AI systems
+                  <div className="text-gray-300 text-sm">
+                    <strong>Proven results:</strong> Companies using multiagent AI systems see 30% efficiency increases within 90 days
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right Column - AI Agent Visual */}
+          {/* Right Column - Multiagent AI Visual */}
           <div className="relative">
             <div className="relative">
               <img 
-                src="/lovable-uploads/159c400b-de89-4de7-994b-288bb2588d00.png" 
-                alt="AI Agent Technology" 
+                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                alt="Multiagent AI Systems - Connected displays showing collaborative AI agents" 
                 className="w-full h-auto rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0119]/50 to-transparent rounded-2xl"></div>
