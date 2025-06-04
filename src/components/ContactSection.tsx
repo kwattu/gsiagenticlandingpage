@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -7,7 +6,7 @@ const ContactSection = () => {
     <section id="contact" className="py-20 bg-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to go from Dashboards to Decision?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to go from Dashboards to Decisions?</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
             A smarter path, in 30 minutes. Book a discovery session. Leave with 2-3 pilot-ready AI ideas.
           </p>
