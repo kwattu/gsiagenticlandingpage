@@ -13,7 +13,7 @@ const ContactSection = () => {
           </p>
           
           <Button size="lg" className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-lg px-8 py-4 group">
-            Book a 30-minute session. Leave with 2-3 pilot-ready AI ideas.
+            Get 2-3 pilot-ready AI ideas!
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>

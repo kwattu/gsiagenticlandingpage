@@ -27,7 +27,7 @@ const HeroSection = () => {
             <div className="flex flex-col lg:flex-row lg:items-center lg:gap-8 mb-12">
               <div className="mb-6 lg:mb-0">
                 <Button size="lg" className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-lg px-8 py-4 group">
-                  Book a 30-minute session. Leave with 2-3 pilot-ready AI ideas.
+                  Get 2-3 pilot-ready AI ideas!
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
