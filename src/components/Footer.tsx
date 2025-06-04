@@ -12,7 +12,7 @@ const Footer = () => {
               className="h-8 mb-4"
             />
             <p className="text-gray-400 max-w-md">
-              Leading the agentic AI era with intelligent systems that decide, act, and optimize.
+              Driving the future of AI with multiagent AI systems that decide, act, and optimize.
             </p>
           </div>
 
