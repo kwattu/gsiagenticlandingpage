@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -11,8 +10,8 @@ const HeroSection = () => {
           <div>
             {/* Main Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Most Businesses Collect Data.
-              <span className="block text-[#f159b2]">Few Make it do Something.</span>
+              Your Data Holds Untapped Potential.
+              <span className="block text-[#f159b2]">We Build AI That Unleashes It.</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
