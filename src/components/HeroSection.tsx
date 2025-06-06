@@ -12,7 +12,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Transform your operations with multiagent AI systems that perceive, decide, and act autonomously—delivering measurable results in weeks, not years.
+            Your Data Holds Untapped Potential. We Build AI That Unleashes It.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
