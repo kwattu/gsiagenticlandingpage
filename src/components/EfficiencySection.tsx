@@ -81,7 +81,7 @@ const EfficiencySection = () => {
                 <h3 className="text-2xl font-semibold text-gray-900">Trust Built In</h3>
               </div>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Innovation means nothing without trust. That's why every solution we build prioritizes security, reliability, and engineering rigor so your AI systems perform safely, predictably, and at scale.
+                Our 'Trust Built In' philosophy is grounded in decades of expertise across software, robotics, and automation. This unique synergy ensures our agentic AI solutions are secure, reliable, and engineered for practical, real-world action.
               </p>
             </div>
           </div>
