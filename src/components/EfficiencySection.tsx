@@ -1,4 +1,3 @@
-
 import { Brain, Target, Users, Shield } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
@@ -31,8 +30,8 @@ const EfficiencySection = () => {
 
             <div>
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-[#dcf448]/20 rounded-full flex items-center justify-center mr-4">
-                  <Target className="w-6 h-6 text-[#dcf448]" />
+                <div className="w-12 h-12 bg-[#f159b2]/20 rounded-full flex items-center justify-center mr-4">
+                  <Target className="w-6 h-6 text-[#f159b2]" />
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900">Custom AI Agents Designed Around Your Needs</h3>
               </div>
@@ -46,8 +45,8 @@ const EfficiencySection = () => {
           <div className="space-y-8">
             <div>
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-[#51B3EA]/20 rounded-full flex items-center justify-center mr-4">
-                  <Users className="w-6 h-6 text-[#51B3EA]" />
+                <div className="w-12 h-12 bg-[#f159b2]/20 rounded-full flex items-center justify-center mr-4">
+                  <Users className="w-6 h-6 text-[#f159b2]" />
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900">End-to-End Collaboration</h3>
               </div>
@@ -87,8 +86,8 @@ const EfficiencySection = () => {
 
             <div>
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mr-4">
-                  <Shield className="w-6 h-6 text-green-500" />
+                <div className="w-12 h-12 bg-[#f159b2]/20 rounded-full flex items-center justify-center mr-4">
+                  <Shield className="w-6 h-6 text-[#f159b2]" />
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900">Trust Built In</h3>
               </div>
