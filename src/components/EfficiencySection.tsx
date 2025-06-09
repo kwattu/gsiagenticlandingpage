@@ -5,12 +5,12 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 const EfficiencySection = () => {
   return (
     <section className="py-20 bg-gray-50 relative overflow-hidden">
-      {/* Static Data Wave Background */}
-      <div className="absolute inset-0 opacity-20">
+      {/* Static Data Wave Background - Lighter and Smaller */}
+      <div className="absolute inset-0 opacity-10">
         <img 
           src="/lovable-uploads/b98e75e0-8b1d-4054-825a-86127454952e.png" 
           alt="Data wave background" 
-          className="w-full h-full object-cover object-center"
+          className="w-3/4 h-3/4 object-cover object-center mx-auto mt-10"
         />
       </div>
 
