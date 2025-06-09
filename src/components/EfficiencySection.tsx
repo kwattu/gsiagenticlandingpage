@@ -1,107 +1,17 @@
+
 import { Brain, Target, Users, Shield } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const EfficiencySection = () => {
   return (
     <section className="py-20 bg-gray-50 relative overflow-hidden">
-      {/* Simplified AI Data Dots */}
-      <div className="absolute inset-0 opacity-40">
-        <div className="absolute top-0 left-0 w-full h-full">
-          {/* Stream 1 - Main flow */}
-          <div className="absolute top-1/2 left-0 w-full h-20 transform -translate-y-1/2">
-            {Array.from({ length: 80 }).map((_, i) => (
-              <div
-                key={i}
-                className="absolute rounded-full animate-[aiParticleFlow_10s_linear_infinite]"
-                style={{
-                  width: `${2 + Math.sin(i * 0.1) * 1}px`,
-                  height: `${2 + Math.sin(i * 0.1) * 1}px`,
-                  background: i % 5 === 0 ? '#f159b2' : i % 5 === 1 ? '#06b6d4' : i % 5 === 2 ? '#8b5cf6' : i % 5 === 3 ? '#10b981' : '#f59e0b',
-                  left: `${(i * 1.25) % 100}%`,
-                  top: `${50 + Math.sin(i * 0.3) * 15}%`,
-                  animationDelay: `${(i * 0.125) % 10}s`,
-                  opacity: 0.8,
-                }}
-              />
-            ))}
-          </div>
-
-          {/* Stream 2 - Upper flow */}
-          <div className="absolute top-1/3 left-0 w-full h-16">
-            {Array.from({ length: 60 }).map((_, i) => (
-              <div
-                key={`stream2-${i}`}
-                className="absolute rounded-full animate-[aiParticleFlow_12s_linear_infinite]"
-                style={{
-                  width: `${1.5 + Math.sin(i * 0.2) * 0.5}px`,
-                  height: `${1.5 + Math.sin(i * 0.2) * 0.5}px`,
-                  background: i % 4 === 0 ? '#f159b2' : i % 4 === 1 ? '#06b6d4' : i % 4 === 2 ? '#8b5cf6' : '#10b981',
-                  left: `${(i * 1.67) % 100}%`,
-                  top: `${50 + Math.sin(i * 0.4) * 20}%`,
-                  animationDelay: `${(i * 0.2) % 12}s`,
-                  opacity: 0.7,
-                }}
-              />
-            ))}
-          </div>
-
-          {/* Stream 3 - Lower flow */}
-          <div className="absolute top-2/3 left-0 w-full h-16">
-            {Array.from({ length: 70 }).map((_, i) => (
-              <div
-                key={`stream3-${i}`}
-                className="absolute rounded-full animate-[aiParticleFlow_14s_linear_infinite]"
-                style={{
-                  width: `${1.2 + Math.sin(i * 0.15) * 0.8}px`,
-                  height: `${1.2 + Math.sin(i * 0.15) * 0.8}px`,
-                  background: i % 3 === 0 ? '#f159b2' : i % 3 === 1 ? '#06b6d4' : '#8b5cf6',
-                  left: `${(i * 1.43) % 100}%`,
-                  top: `${50 + Math.sin(i * 0.5) * 18}%`,
-                  animationDelay: `${(i * 0.2) % 14}s`,
-                  opacity: 0.6,
-                }}
-              />
-            ))}
-          </div>
-
-          {/* Stream 4 - Top subtle flow */}
-          <div className="absolute top-1/4 left-0 w-full h-12">
-            {Array.from({ length: 50 }).map((_, i) => (
-              <div
-                key={`stream4-${i}`}
-                className="absolute rounded-full animate-[aiParticleFlow_16s_linear_infinite]"
-                style={{
-                  width: `${1 + Math.sin(i * 0.1) * 0.5}px`,
-                  height: `${1 + Math.sin(i * 0.1) * 0.5}px`,
-                  background: i % 2 === 0 ? '#10b981' : '#f59e0b',
-                  left: `${(i * 2) % 100}%`,
-                  top: `${50 + Math.sin(i * 0.6) * 12}%`,
-                  animationDelay: `${(i * 0.32) % 16}s`,
-                  opacity: 0.5,
-                }}
-              />
-            ))}
-          </div>
-
-          {/* Stream 5 - Bottom subtle flow */}
-          <div className="absolute top-3/4 left-0 w-full h-12">
-            {Array.from({ length: 65 }).map((_, i) => (
-              <div
-                key={`stream5-${i}`}
-                className="absolute rounded-full animate-[aiParticleFlow_18s_linear_infinite]"
-                style={{
-                  width: `${0.8 + Math.sin(i * 0.25) * 0.7}px`,
-                  height: `${0.8 + Math.sin(i * 0.25) * 0.7}px`,
-                  background: i % 4 === 0 ? '#f59e0b' : i % 4 === 1 ? '#06b6d4' : i % 4 === 2 ? '#f159b2' : '#8b5cf6',
-                  left: `${(i * 1.54) % 100}%`,
-                  top: `${50 + Math.sin(i * 0.7) * 10}%`,
-                  animationDelay: `${(i * 0.28) % 18}s`,
-                  opacity: 0.45,
-                }}
-              />
-            ))}
-          </div>
-        </div>
+      {/* Static Data Wave Background */}
+      <div className="absolute inset-0 opacity-20">
+        <img 
+          src="/lovable-uploads/b98e75e0-8b1d-4054-825a-86127454952e.png" 
+          alt="Data wave background" 
+          className="w-full h-full object-cover object-center"
+        />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -198,27 +108,6 @@ const EfficiencySection = () => {
           </div>
         </div>
       </div>
-
-      <style dangerouslySetInnerHTML={{
-        __html: `
-          @keyframes aiParticleFlow {
-            0% {
-              transform: translateX(-30px);
-              opacity: 0;
-            }
-            5% {
-              opacity: 1;
-            }
-            95% {
-              opacity: 1;
-            }
-            100% {
-              transform: translateX(calc(100vw + 30px));
-              opacity: 0;
-            }
-          }
-        `
-      }} />
     </section>
   );
 };
