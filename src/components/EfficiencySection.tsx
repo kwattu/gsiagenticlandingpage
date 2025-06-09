@@ -1,5 +1,6 @@
 
 import { Brain, Target, Users, Shield } from "lucide-react";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const EfficiencySection = () => {
   return (
@@ -53,24 +54,35 @@ const EfficiencySection = () => {
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
                 You don't need just a vendor—you need a partner. Geisel works alongside your team through every phase, offering:
               </p>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-[#51B3EA] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Strategic AI discovery & planning
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-[#51B3EA] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Custom development of agentic AI solutions
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-[#51B3EA] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Smooth integration into your current tech stack
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-[#51B3EA] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Ongoing tuning and support as your needs evolve
-                </li>
-              </ul>
+              
+              <div className="overflow-x-auto">
+                <Table className="w-full border border-gray-200 rounded-lg">
+                  <TableHeader>
+                    <TableRow className="bg-gray-800">
+                      <TableHead className="text-[#f159b2] font-semibold text-center border-r border-gray-600">Strategic AI Planning</TableHead>
+                      <TableHead className="text-[#f159b2] font-semibold text-center border-r border-gray-600">Custom AI Agent Development</TableHead>
+                      <TableHead className="text-[#f159b2] font-semibold text-center border-r border-gray-600">Tech Stack Integration</TableHead>
+                      <TableHead className="text-[#f159b2] font-semibold text-center">Optimization & Support</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow className="bg-gray-800">
+                      <TableCell className="text-white text-center p-4 border-r border-gray-600">
+                        Identifying high-impact opportunities; risk-managed phased approach
+                      </TableCell>
+                      <TableCell className="text-white text-center p-4 border-r border-gray-600">
+                        Iterative building; robust, explainable & aligned agents
+                      </TableCell>
+                      <TableCell className="text-white text-center p-4 border-r border-gray-600">
+                        Seamless interoperability; enhancing existing workflows
+                      </TableCell>
+                      <TableCell className="text-white text-center p-4">
+                        Continuous partnership; optimizing for sustained value.
+                      </TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </div>
             </div>
 
             <div>
