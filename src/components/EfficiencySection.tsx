@@ -1,3 +1,4 @@
+
 import { Brain, Target, Users, Shield } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
@@ -5,25 +6,64 @@ const EfficiencySection = () => {
   return (
     <section className="py-20 bg-gray-50 relative overflow-hidden">
       {/* Animated Data Stream Background */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-0 w-full h-full">
-          {/* Data stream lines */}
-          <div className="absolute top-10 left-0 w-2 h-32 bg-gradient-to-r from-[#f159b2] to-blue-500 transform rotate-12 animate-[dataFlow1_6s_linear_infinite]"></div>
-          <div className="absolute top-20 left-0 w-1 h-24 bg-gradient-to-r from-blue-500 to-purple-500 transform rotate-45 animate-[dataFlow2_8s_linear_infinite_1s]"></div>
-          <div className="absolute top-32 left-0 w-3 h-40 bg-gradient-to-r from-purple-500 to-green-500 transform -rotate-12 animate-[dataFlow3_7s_linear_infinite_2s]"></div>
-          <div className="absolute top-50 left-0 w-1 h-20 bg-gradient-to-r from-green-500 to-yellow-500 transform rotate-30 animate-[dataFlow1_9s_linear_infinite_3s]"></div>
-          <div className="absolute top-64 left-0 w-2 h-28 bg-gradient-to-r from-yellow-500 to-red-500 transform -rotate-45 animate-[dataFlow2_5s_linear_infinite_4s]"></div>
-          <div className="absolute top-80 left-0 w-1 h-36 bg-gradient-to-r from-red-500 to-cyan-500 transform rotate-60 animate-[dataFlow3_10s_linear_infinite_5s]"></div>
-          
-          {/* Additional data streams for density */}
-          <div className="absolute top-16 left-0 w-1 h-16 bg-gradient-to-r from-cyan-500 to-indigo-500 transform rotate-15 animate-[dataFlow1_11s_linear_infinite_6s]"></div>
-          <div className="absolute top-40 left-0 w-2 h-44 bg-gradient-to-r from-indigo-500 to-pink-500 transform -rotate-30 animate-[dataFlow2_6s_linear_infinite_7s]"></div>
-          <div className="absolute top-72 left-0 w-1 h-24 bg-gradient-to-r from-pink-500 to-[#f159b2] transform rotate-75 animate-[dataFlow3_8s_linear_infinite_8s]"></div>
-          
-          {/* More data streams */}
-          <div className="absolute top-8 left-0 w-1 h-48 bg-gradient-to-r from-blue-400 to-purple-400 transform rotate-90 animate-[dataFlow1_12s_linear_infinite_9s]"></div>
-          <div className="absolute top-28 left-0 w-2 h-20 bg-gradient-to-r from-purple-400 to-green-400 transform -rotate-60 animate-[dataFlow2_7s_linear_infinite_10s]"></div>
-          <div className="absolute top-56 left-0 w-1 h-32 bg-gradient-to-r from-green-400 to-yellow-400 transform rotate-45 animate-[dataFlow3_9s_linear_infinite_11s]"></div>
+          {/* Main flowing wave with particles */}
+          <div className="absolute top-1/2 left-0 w-full h-2 transform -translate-y-1/2">
+            {/* Base wave flow */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#f159b2] to-transparent animate-[waveFlow_8s_ease-in-out_infinite]"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-[waveFlow_10s_ease-in-out_infinite_reverse_2s]"></div>
+            
+            {/* Particle streams */}
+            {Array.from({ length: 50 }).map((_, i) => (
+              <div
+                key={i}
+                className="absolute w-1 h-1 rounded-full animate-[particleFlow_6s_linear_infinite]"
+                style={{
+                  background: i % 3 === 0 ? '#f159b2' : i % 3 === 1 ? '#06b6d4' : '#8b5cf6',
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.sin(i * 0.5) * 20 + 50}%`,
+                  animationDelay: `${Math.random() * 6}s`,
+                  transform: `scale(${0.5 + Math.random() * 0.8})`,
+                }}
+              />
+            ))}
+          </div>
+
+          {/* Secondary wave layers */}
+          <div className="absolute top-1/3 left-0 w-full h-1">
+            {Array.from({ length: 30 }).map((_, i) => (
+              <div
+                key={`wave2-${i}`}
+                className="absolute w-0.5 h-0.5 rounded-full animate-[particleFlow_8s_linear_infinite]"
+                style={{
+                  background: i % 2 === 0 ? '#f159b2' : '#06b6d4',
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.sin(i * 0.8) * 15 + 50}%`,
+                  animationDelay: `${Math.random() * 8}s`,
+                }}
+              />
+            ))}
+          </div>
+
+          <div className="absolute top-2/3 left-0 w-full h-1">
+            {Array.from({ length: 40 }).map((_, i) => (
+              <div
+                key={`wave3-${i}`}
+                className="absolute w-0.5 h-0.5 rounded-full animate-[particleFlow_7s_linear_infinite]"
+                style={{
+                  background: i % 2 === 0 ? '#8b5cf6' : '#06b6d4',
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.sin(i * 1.2) * 10 + 50}%`,
+                  animationDelay: `${Math.random() * 7}s`,
+                }}
+              />
+            ))}
+          </div>
+
+          {/* Flowing gradient waves */}
+          <div className="absolute top-1/4 left-0 w-full h-8 bg-gradient-to-r from-transparent via-[#f159b2]/30 to-transparent transform rotate-2 animate-[flowingWave_12s_ease-in-out_infinite]"></div>
+          <div className="absolute top-3/4 left-0 w-full h-6 bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent transform -rotate-1 animate-[flowingWave_15s_ease-in-out_infinite_reverse]"></div>
         </div>
       </div>
 
@@ -124,54 +164,46 @@ const EfficiencySection = () => {
 
       <style dangerouslySetInnerHTML={{
         __html: `
-          @keyframes dataFlow1 {
-            0% {
-              transform: translateX(-100px) translateY(0px) rotate(12deg);
+          @keyframes waveFlow {
+            0%, 100% {
+              transform: translateX(-100%) scaleY(1);
               opacity: 0;
             }
             20% {
               opacity: 0.8;
             }
+            50% {
+              transform: translateX(50%) scaleY(1.5);
+              opacity: 1;
+            }
             80% {
               opacity: 0.8;
             }
+          }
+          
+          @keyframes particleFlow {
+            0% {
+              transform: translateX(-20px) translateY(0px);
+              opacity: 0;
+            }
+            10% {
+              opacity: 1;
+            }
+            90% {
+              opacity: 1;
+            }
             100% {
-              transform: translateX(calc(100vw + 100px)) translateY(-30px) rotate(12deg);
+              transform: translateX(calc(100vw + 20px)) translateY(-10px);
               opacity: 0;
             }
           }
           
-          @keyframes dataFlow2 {
-            0% {
-              transform: translateX(-100px) translateY(0px) rotate(45deg);
-              opacity: 0;
+          @keyframes flowingWave {
+            0%, 100% {
+              transform: translateX(-100%) rotate(2deg) scaleY(1);
             }
-            20% {
-              opacity: 0.6;
-            }
-            80% {
-              opacity: 0.6;
-            }
-            100% {
-              transform: translateX(calc(100vw + 100px)) translateY(40px) rotate(45deg);
-              opacity: 0;
-            }
-          }
-          
-          @keyframes dataFlow3 {
-            0% {
-              transform: translateX(-100px) translateY(0px) rotate(-12deg);
-              opacity: 0;
-            }
-            20% {
-              opacity: 0.7;
-            }
-            80% {
-              opacity: 0.7;
-            }
-            100% {
-              transform: translateX(calc(100vw + 100px)) translateY(-20px) rotate(-12deg);
-              opacity: 0;
+            50% {
+              transform: translateX(100%) rotate(2deg) scaleY(1.2);
             }
           }
         `
