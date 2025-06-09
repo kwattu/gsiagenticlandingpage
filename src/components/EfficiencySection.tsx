@@ -1,130 +1,106 @@
-
 import { Brain, Target, Users, Shield } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const EfficiencySection = () => {
   return (
     <section className="py-20 bg-gray-50 relative overflow-hidden">
-      {/* Enhanced AI Data Wave Background */}
-      <div className="absolute inset-0 opacity-30">
+      {/* Simplified AI Data Dots */}
+      <div className="absolute inset-0 opacity-40">
         <div className="absolute top-0 left-0 w-full h-full">
-          {/* Primary AI data stream */}
-          <div className="absolute top-1/2 left-0 w-full h-40 transform -translate-y-1/2">
-            {/* Main flowing data wave */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#f159b2]/40 to-transparent animate-[aiDataFlow_8s_ease-in-out_infinite]"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/30 to-transparent animate-[aiDataFlow_12s_ease-in-out_infinite_reverse_2s]"></div>
-            
-            {/* AI data particles - primary stream */}
-            {Array.from({ length: 150 }).map((_, i) => (
+          {/* Stream 1 - Main flow */}
+          <div className="absolute top-1/2 left-0 w-full h-20 transform -translate-y-1/2">
+            {Array.from({ length: 80 }).map((_, i) => (
               <div
                 key={i}
-                className="absolute rounded-full animate-[aiParticleFlow_12s_linear_infinite]"
+                className="absolute rounded-full animate-[aiParticleFlow_10s_linear_infinite]"
                 style={{
-                  width: `${2 + Math.sin(i * 0.1) * 2}px`,
-                  height: `${2 + Math.sin(i * 0.1) * 2}px`,
+                  width: `${2 + Math.sin(i * 0.1) * 1}px`,
+                  height: `${2 + Math.sin(i * 0.1) * 1}px`,
                   background: i % 5 === 0 ? '#f159b2' : i % 5 === 1 ? '#06b6d4' : i % 5 === 2 ? '#8b5cf6' : i % 5 === 3 ? '#10b981' : '#f59e0b',
-                  left: `${(i * 0.7) % 100}%`,
-                  top: `${50 + Math.sin(i * 0.2) * 25 + Math.cos(i * 0.15) * 10}%`,
-                  animationDelay: `${(i * 0.08) % 12}s`,
-                  opacity: 0.8 + Math.sin(i * 0.3) * 0.2,
-                  boxShadow: i % 3 === 0 ? '0 0 4px currentColor' : 'none',
+                  left: `${(i * 1.25) % 100}%`,
+                  top: `${50 + Math.sin(i * 0.3) * 15}%`,
+                  animationDelay: `${(i * 0.125) % 10}s`,
+                  opacity: 0.8,
                 }}
               />
             ))}
           </div>
 
-          {/* Secondary data streams for depth */}
-          <div className="absolute top-1/4 left-0 w-full h-28">
-            {Array.from({ length: 100 }).map((_, i) => (
+          {/* Stream 2 - Upper flow */}
+          <div className="absolute top-1/3 left-0 w-full h-16">
+            {Array.from({ length: 60 }).map((_, i) => (
               <div
                 key={`stream2-${i}`}
-                className="absolute w-1 h-1 rounded-full animate-[aiParticleFlow_15s_linear_infinite]"
+                className="absolute rounded-full animate-[aiParticleFlow_12s_linear_infinite]"
                 style={{
+                  width: `${1.5 + Math.sin(i * 0.2) * 0.5}px`,
+                  height: `${1.5 + Math.sin(i * 0.2) * 0.5}px`,
                   background: i % 4 === 0 ? '#f159b2' : i % 4 === 1 ? '#06b6d4' : i % 4 === 2 ? '#8b5cf6' : '#10b981',
-                  left: `${(i * 1) % 100}%`,
-                  top: `${50 + Math.sin(i * 0.3 + Math.PI/4) * 30}%`,
-                  animationDelay: `${(i * 0.15) % 15}s`,
+                  left: `${(i * 1.67) % 100}%`,
+                  top: `${50 + Math.sin(i * 0.4) * 20}%`,
+                  animationDelay: `${(i * 0.2) % 12}s`,
+                  opacity: 0.7,
+                }}
+              />
+            ))}
+          </div>
+
+          {/* Stream 3 - Lower flow */}
+          <div className="absolute top-2/3 left-0 w-full h-16">
+            {Array.from({ length: 70 }).map((_, i) => (
+              <div
+                key={`stream3-${i}`}
+                className="absolute rounded-full animate-[aiParticleFlow_14s_linear_infinite]"
+                style={{
+                  width: `${1.2 + Math.sin(i * 0.15) * 0.8}px`,
+                  height: `${1.2 + Math.sin(i * 0.15) * 0.8}px`,
+                  background: i % 3 === 0 ? '#f159b2' : i % 3 === 1 ? '#06b6d4' : '#8b5cf6',
+                  left: `${(i * 1.43) % 100}%`,
+                  top: `${50 + Math.sin(i * 0.5) * 18}%`,
+                  animationDelay: `${(i * 0.2) % 14}s`,
                   opacity: 0.6,
                 }}
               />
             ))}
           </div>
 
-          {/* Third data stream - upper */}
-          <div className="absolute top-1/6 left-0 w-full h-24">
-            {Array.from({ length: 80 }).map((_, i) => (
+          {/* Stream 4 - Top subtle flow */}
+          <div className="absolute top-1/4 left-0 w-full h-12">
+            {Array.from({ length: 50 }).map((_, i) => (
               <div
-                key={`stream3-${i}`}
-                className="absolute rounded-full animate-[aiParticleFlow_20s_linear_infinite]"
+                key={`stream4-${i}`}
+                className="absolute rounded-full animate-[aiParticleFlow_16s_linear_infinite]"
                 style={{
-                  width: `${1.5 + Math.sin(i * 0.25) * 1.5}px`,
-                  height: `${1.5 + Math.sin(i * 0.25) * 1.5}px`,
-                  background: i % 3 === 0 ? '#f159b2' : i % 3 === 1 ? '#f59e0b' : '#06b6d4',
-                  left: `${(i * 1.25) % 100}%`,
-                  top: `${50 + Math.sin(i * 0.5 + Math.PI/3) * 20}%`,
-                  animationDelay: `${(i * 0.25) % 20}s`,
+                  width: `${1 + Math.sin(i * 0.1) * 0.5}px`,
+                  height: `${1 + Math.sin(i * 0.1) * 0.5}px`,
+                  background: i % 2 === 0 ? '#10b981' : '#f59e0b',
+                  left: `${(i * 2) % 100}%`,
+                  top: `${50 + Math.sin(i * 0.6) * 12}%`,
+                  animationDelay: `${(i * 0.32) % 16}s`,
                   opacity: 0.5,
                 }}
               />
             ))}
           </div>
 
-          {/* Fourth data stream - lower */}
-          <div className="absolute top-2/3 left-0 w-full h-20">
-            {Array.from({ length: 120 }).map((_, i) => (
-              <div
-                key={`stream4-${i}`}
-                className="absolute rounded-full animate-[aiParticleFlow_18s_linear_infinite]"
-                style={{
-                  width: `${1 + Math.sin(i * 0.2) * 1}px`,
-                  height: `${1 + Math.sin(i * 0.2) * 1}px`,
-                  background: i % 2 === 0 ? '#10b981' : '#8b5cf6',
-                  left: `${(i * 0.8) % 100}%`,
-                  top: `${50 + Math.sin(i * 0.4 + Math.PI/6) * 15}%`,
-                  animationDelay: `${(i * 0.15) % 18}s`,
-                  opacity: 0.4,
-                }}
-              />
-            ))}
-          </div>
-
-          {/* Fifth data stream - bottom */}
-          <div className="absolute top-5/6 left-0 w-full h-16">
-            {Array.from({ length: 90 }).map((_, i) => (
+          {/* Stream 5 - Bottom subtle flow */}
+          <div className="absolute top-3/4 left-0 w-full h-12">
+            {Array.from({ length: 65 }).map((_, i) => (
               <div
                 key={`stream5-${i}`}
-                className="absolute rounded-full animate-[aiParticleFlow_22s_linear_infinite]"
+                className="absolute rounded-full animate-[aiParticleFlow_18s_linear_infinite]"
                 style={{
-                  width: `${0.8 + Math.sin(i * 0.15) * 0.8}px`,
-                  height: `${0.8 + Math.sin(i * 0.15) * 0.8}px`,
-                  background: i % 3 === 0 ? '#f59e0b' : i % 3 === 1 ? '#06b6d4' : '#f159b2',
-                  left: `${(i * 1.1) % 100}%`,
-                  top: `${50 + Math.sin(i * 0.6) * 12}%`,
-                  animationDelay: `${(i * 0.24) % 22}s`,
-                  opacity: 0.35,
+                  width: `${0.8 + Math.sin(i * 0.25) * 0.7}px`,
+                  height: `${0.8 + Math.sin(i * 0.25) * 0.7}px`,
+                  background: i % 4 === 0 ? '#f59e0b' : i % 4 === 1 ? '#06b6d4' : i % 4 === 2 ? '#f159b2' : '#8b5cf6',
+                  left: `${(i * 1.54) % 100}%`,
+                  top: `${50 + Math.sin(i * 0.7) * 10}%`,
+                  animationDelay: `${(i * 0.28) % 18}s`,
+                  opacity: 0.45,
                 }}
               />
             ))}
           </div>
-
-          {/* AI neural network connection lines */}
-          <div className="absolute top-1/4 left-0 w-full h-2 bg-gradient-to-r from-transparent via-[#f159b2]/20 to-transparent transform rotate-0.5 animate-[neuralPulse_10s_ease-in-out_infinite]"></div>
-          <div className="absolute top-3/4 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400/15 to-transparent transform -rotate-0.5 animate-[neuralPulse_14s_ease-in-out_infinite_reverse]"></div>
-          
-          {/* Data nodes */}
-          {Array.from({ length: 15 }).map((_, i) => (
-            <div
-              key={`node-${i}`}
-              className="absolute w-2 h-2 rounded-full animate-[dataPulse_6s_ease-in-out_infinite]"
-              style={{
-                background: i % 3 === 0 ? '#f159b2' : i % 3 === 1 ? '#06b6d4' : '#10b981',
-                left: `${8 + (i * 6) % 84}%`,
-                top: `${25 + Math.sin(i * 0.4) * 50}%`,
-                animationDelay: `${i * 0.4}s`,
-                boxShadow: `0 0 8px ${i % 3 === 0 ? '#f159b2' : i % 3 === 1 ? '#06b6d4' : '#10b981'}`,
-              }}
-            />
-          ))}
         </div>
       </div>
 
@@ -225,79 +201,20 @@ const EfficiencySection = () => {
 
       <style dangerouslySetInnerHTML={{
         __html: `
-          @keyframes aiDataFlow {
-            0%, 100% {
-              transform: translateX(-100%) scaleY(1) skewX(-2deg);
-              opacity: 0;
-            }
-            20% {
-              opacity: 0.8;
-            }
-            50% {
-              transform: translateX(50%) scaleY(1.5) skewX(1deg);
-              opacity: 1;
-            }
-            80% {
-              opacity: 0.8;
-            }
-          }
-          
           @keyframes aiParticleFlow {
             0% {
-              transform: translateX(-30px) translateY(0px) scale(0.3);
+              transform: translateX(-30px);
               opacity: 0;
             }
-            8% {
+            5% {
               opacity: 1;
             }
-            15% {
-              transform: translateX(15vw) translateY(${() => Math.sin(0.15) * 12}px) scale(1);
-              opacity: 1;
-            }
-            35% {
-              transform: translateX(35vw) translateY(${() => Math.sin(0.35) * 18}px) scale(0.8);
-            }
-            60% {
-              transform: translateX(60vw) translateY(${() => Math.sin(0.6) * 22}px) scale(1.1);
-            }
-            85% {
-              transform: translateX(85vw) translateY(${() => Math.sin(0.85) * 15}px) scale(0.7);
-            }
-            92% {
+            95% {
               opacity: 1;
             }
             100% {
-              transform: translateX(calc(100vw + 30px)) translateY(${() => Math.sin(1) * 8}px) scale(0.2);
+              transform: translateX(calc(100vw + 30px));
               opacity: 0;
-            }
-          }
-          
-          @keyframes neuralPulse {
-            0%, 100% {
-              transform: translateX(-100%) scaleY(1) scaleX(0.5);
-              opacity: 0.2;
-            }
-            30% {
-              transform: translateX(-20%) scaleY(1.8) scaleX(1.2);
-              opacity: 0.8;
-            }
-            60% {
-              transform: translateX(80%) scaleY(1.2) scaleX(1.5);
-              opacity: 1;
-            }
-            90% {
-              opacity: 0.4;
-            }
-          }
-          
-          @keyframes dataPulse {
-            0%, 100% {
-              transform: scale(1);
-              opacity: 0.6;
-            }
-            50% {
-              transform: scale(1.5);
-              opacity: 1;
             }
           }
         `
