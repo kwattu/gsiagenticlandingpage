@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Search, Lightbulb, Code, Cog, TrendingUp } from "lucide-react";
 
@@ -31,8 +32,17 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gray-900">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-20 bg-gray-900 relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 opacity-20">
+        <img 
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=6000&q=80" 
+          alt="Software developer client meeting" 
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             From Insight to Action
