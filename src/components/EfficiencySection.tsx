@@ -1,10 +1,29 @@
+
 import { Brain, Target, Users, Shield } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const EfficiencySection = () => {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gray-50 relative overflow-hidden">
+      {/* Animated Data Stream Background */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 left-0 w-full h-full">
+          {/* Multiple flowing data streams */}
+          <div className="absolute top-10 left-0 w-4 h-4 bg-[#f159b2] rounded-full animate-[flow1_8s_linear_infinite]"></div>
+          <div className="absolute top-32 left-0 w-3 h-3 bg-blue-500 rounded-full animate-[flow2_10s_linear_infinite_2s]"></div>
+          <div className="absolute top-56 left-0 w-5 h-5 bg-purple-500 rounded-full animate-[flow3_12s_linear_infinite_4s]"></div>
+          <div className="absolute top-80 left-0 w-2 h-2 bg-green-500 rounded-full animate-[flow1_9s_linear_infinite_1s]"></div>
+          <div className="absolute top-20 left-0 w-3 h-3 bg-yellow-500 rounded-full animate-[flow2_11s_linear_infinite_3s]"></div>
+          <div className="absolute top-44 left-0 w-4 h-4 bg-red-500 rounded-full animate-[flow3_7s_linear_infinite_5s]"></div>
+          
+          {/* Additional streams for density */}
+          <div className="absolute top-16 left-0 w-2 h-2 bg-cyan-500 rounded-full animate-[flow1_13s_linear_infinite_6s]"></div>
+          <div className="absolute top-68 left-0 w-3 h-3 bg-indigo-500 rounded-full animate-[flow2_8.5s_linear_infinite_2.5s]"></div>
+          <div className="absolute top-72 left-0 w-4 h-4 bg-pink-500 rounded-full animate-[flow3_9.5s_linear_infinite_1.5s]"></div>
+        </div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -98,6 +117,59 @@ const EfficiencySection = () => {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes flow1 {
+          0% {
+            transform: translateX(-20px) translateY(0px);
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            transform: translateX(calc(100vw + 20px)) translateY(-50px);
+            opacity: 0;
+          }
+        }
+        
+        @keyframes flow2 {
+          0% {
+            transform: translateX(-20px) translateY(0px);
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            transform: translateX(calc(100vw + 20px)) translateY(30px);
+            opacity: 0;
+          }
+        }
+        
+        @keyframes flow3 {
+          0% {
+            transform: translateX(-20px) translateY(0px);
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            transform: translateX(calc(100vw + 20px)) translateY(-20px);
+            opacity: 0;
+          }
+        }
+      `}</style>
     </section>
   );
 };
