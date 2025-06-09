@@ -15,7 +15,7 @@ const AboutSection = () => {
             <img 
               src="/lovable-uploads/972f9b43-19f5-4db4-a3a4-e6f5cd6a413b.png" 
               alt="NASA Logo" 
-              className="h-32 w-32 object-contain flex-shrink-0 mt-2"
+              className="h-48 w-48 object-contain flex-shrink-0 mt-2"
             />
             
             <div className="text-left flex-1">
