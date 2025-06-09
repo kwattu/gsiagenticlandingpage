@@ -10,7 +10,7 @@ const EfficiencySection = () => {
         <img 
           src="/lovable-uploads/b98e75e0-8b1d-4054-825a-86127454952e.png" 
           alt="Data wave background" 
-          className="w-3/4 h-3/4 object-cover object-center mx-auto mt-10"
+          className="w-full h-3/4 object-cover object-center mx-auto mt-10"
         />
       </div>
 
