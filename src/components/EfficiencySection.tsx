@@ -15,17 +15,17 @@ const EfficiencySection = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/30 to-transparent animate-[aiDataFlow_12s_ease-in-out_infinite_reverse_2s]"></div>
             
             {/* AI data particles - primary stream */}
-            {Array.from({ length: 120 }).map((_, i) => (
+            {Array.from({ length: 150 }).map((_, i) => (
               <div
                 key={i}
                 className="absolute rounded-full animate-[aiParticleFlow_12s_linear_infinite]"
                 style={{
                   width: `${2 + Math.sin(i * 0.1) * 2}px`,
                   height: `${2 + Math.sin(i * 0.1) * 2}px`,
-                  background: i % 4 === 0 ? '#f159b2' : i % 4 === 1 ? '#06b6d4' : i % 4 === 2 ? '#8b5cf6' : '#10b981',
-                  left: `${(i * 0.8) % 100}%`,
+                  background: i % 5 === 0 ? '#f159b2' : i % 5 === 1 ? '#06b6d4' : i % 5 === 2 ? '#8b5cf6' : i % 5 === 3 ? '#10b981' : '#f59e0b',
+                  left: `${(i * 0.7) % 100}%`,
                   top: `${50 + Math.sin(i * 0.2) * 25 + Math.cos(i * 0.15) * 10}%`,
-                  animationDelay: `${(i * 0.1) % 12}s`,
+                  animationDelay: `${(i * 0.08) % 12}s`,
                   opacity: 0.8 + Math.sin(i * 0.3) * 0.2,
                   boxShadow: i % 3 === 0 ? '0 0 4px currentColor' : 'none',
                 }}
@@ -34,35 +34,74 @@ const EfficiencySection = () => {
           </div>
 
           {/* Secondary data streams for depth */}
-          <div className="absolute top-1/3 left-0 w-full h-24">
-            {Array.from({ length: 80 }).map((_, i) => (
+          <div className="absolute top-1/4 left-0 w-full h-28">
+            {Array.from({ length: 100 }).map((_, i) => (
               <div
                 key={`stream2-${i}`}
                 className="absolute w-1 h-1 rounded-full animate-[aiParticleFlow_15s_linear_infinite]"
                 style={{
-                  background: i % 3 === 0 ? '#f159b2' : i % 3 === 1 ? '#06b6d4' : '#8b5cf6',
-                  left: `${(i * 1.25) % 100}%`,
-                  top: `${50 + Math.sin(i * 0.3 + Math.PI/4) * 20}%`,
-                  animationDelay: `${(i * 0.1875) % 15}s`,
+                  background: i % 4 === 0 ? '#f159b2' : i % 4 === 1 ? '#06b6d4' : i % 4 === 2 ? '#8b5cf6' : '#10b981',
+                  left: `${(i * 1) % 100}%`,
+                  top: `${50 + Math.sin(i * 0.3 + Math.PI/4) * 30}%`,
+                  animationDelay: `${(i * 0.15) % 15}s`,
                   opacity: 0.6,
                 }}
               />
             ))}
           </div>
 
-          <div className="absolute top-2/3 left-0 w-full h-20">
-            {Array.from({ length: 100 }).map((_, i) => (
+          {/* Third data stream - upper */}
+          <div className="absolute top-1/6 left-0 w-full h-24">
+            {Array.from({ length: 80 }).map((_, i) => (
               <div
                 key={`stream3-${i}`}
+                className="absolute rounded-full animate-[aiParticleFlow_20s_linear_infinite]"
+                style={{
+                  width: `${1.5 + Math.sin(i * 0.25) * 1.5}px`,
+                  height: `${1.5 + Math.sin(i * 0.25) * 1.5}px`,
+                  background: i % 3 === 0 ? '#f159b2' : i % 3 === 1 ? '#f59e0b' : '#06b6d4',
+                  left: `${(i * 1.25) % 100}%`,
+                  top: `${50 + Math.sin(i * 0.5 + Math.PI/3) * 20}%`,
+                  animationDelay: `${(i * 0.25) % 20}s`,
+                  opacity: 0.5,
+                }}
+              />
+            ))}
+          </div>
+
+          {/* Fourth data stream - lower */}
+          <div className="absolute top-2/3 left-0 w-full h-20">
+            {Array.from({ length: 120 }).map((_, i) => (
+              <div
+                key={`stream4-${i}`}
                 className="absolute rounded-full animate-[aiParticleFlow_18s_linear_infinite]"
                 style={{
                   width: `${1 + Math.sin(i * 0.2) * 1}px`,
                   height: `${1 + Math.sin(i * 0.2) * 1}px`,
-                  background: i % 2 === 0 ? '#10b981' : '#06b6d4',
-                  left: `${(i * 1) % 100}%`,
+                  background: i % 2 === 0 ? '#10b981' : '#8b5cf6',
+                  left: `${(i * 0.8) % 100}%`,
                   top: `${50 + Math.sin(i * 0.4 + Math.PI/6) * 15}%`,
-                  animationDelay: `${(i * 0.18) % 18}s`,
+                  animationDelay: `${(i * 0.15) % 18}s`,
                   opacity: 0.4,
+                }}
+              />
+            ))}
+          </div>
+
+          {/* Fifth data stream - bottom */}
+          <div className="absolute top-5/6 left-0 w-full h-16">
+            {Array.from({ length: 90 }).map((_, i) => (
+              <div
+                key={`stream5-${i}`}
+                className="absolute rounded-full animate-[aiParticleFlow_22s_linear_infinite]"
+                style={{
+                  width: `${0.8 + Math.sin(i * 0.15) * 0.8}px`,
+                  height: `${0.8 + Math.sin(i * 0.15) * 0.8}px`,
+                  background: i % 3 === 0 ? '#f59e0b' : i % 3 === 1 ? '#06b6d4' : '#f159b2',
+                  left: `${(i * 1.1) % 100}%`,
+                  top: `${50 + Math.sin(i * 0.6) * 12}%`,
+                  animationDelay: `${(i * 0.24) % 22}s`,
+                  opacity: 0.35,
                 }}
               />
             ))}
@@ -73,16 +112,16 @@ const EfficiencySection = () => {
           <div className="absolute top-3/4 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400/15 to-transparent transform -rotate-0.5 animate-[neuralPulse_14s_ease-in-out_infinite_reverse]"></div>
           
           {/* Data nodes */}
-          {Array.from({ length: 12 }).map((_, i) => (
+          {Array.from({ length: 15 }).map((_, i) => (
             <div
               key={`node-${i}`}
               className="absolute w-2 h-2 rounded-full animate-[dataPulse_6s_ease-in-out_infinite]"
               style={{
-                background: '#f159b2',
-                left: `${10 + (i * 8) % 80}%`,
-                top: `${30 + Math.sin(i * 0.5) * 40}%`,
-                animationDelay: `${i * 0.5}s`,
-                boxShadow: '0 0 8px #f159b2',
+                background: i % 3 === 0 ? '#f159b2' : i % 3 === 1 ? '#06b6d4' : '#10b981',
+                left: `${8 + (i * 6) % 84}%`,
+                top: `${25 + Math.sin(i * 0.4) * 50}%`,
+                animationDelay: `${i * 0.4}s`,
+                boxShadow: `0 0 8px ${i % 3 === 0 ? '#f159b2' : i % 3 === 1 ? '#06b6d4' : '#10b981'}`,
               }}
             />
           ))}
