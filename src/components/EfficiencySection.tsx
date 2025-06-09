@@ -8,62 +8,64 @@ const EfficiencySection = () => {
       {/* Animated Data Stream Background */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-0 w-full h-full">
-          {/* Main flowing wave with particles */}
-          <div className="absolute top-1/2 left-0 w-full h-2 transform -translate-y-1/2">
-            {/* Base wave flow */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#f159b2] to-transparent animate-[waveFlow_8s_ease-in-out_infinite]"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-[waveFlow_10s_ease-in-out_infinite_reverse_2s]"></div>
+          {/* Main ocean wave with particles */}
+          <div className="absolute top-1/2 left-0 w-full h-32 transform -translate-y-1/2">
+            {/* Primary wave flow */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#f159b2] to-transparent animate-[oceanWave_12s_ease-in-out_infinite]"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-[oceanWave_15s_ease-in-out_infinite_reverse_3s]"></div>
             
-            {/* Particle streams */}
-            {Array.from({ length: 50 }).map((_, i) => (
+            {/* Ocean wave particles */}
+            {Array.from({ length: 80 }).map((_, i) => (
               <div
                 key={i}
-                className="absolute w-1 h-1 rounded-full animate-[particleFlow_6s_linear_infinite]"
+                className="absolute w-1 h-1 rounded-full animate-[oceanParticle_10s_linear_infinite]"
                 style={{
                   background: i % 3 === 0 ? '#f159b2' : i % 3 === 1 ? '#06b6d4' : '#8b5cf6',
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.sin(i * 0.5) * 20 + 50}%`,
-                  animationDelay: `${Math.random() * 6}s`,
-                  transform: `scale(${0.5 + Math.random() * 0.8})`,
+                  left: `${(i * 1.25) % 100}%`,
+                  top: `${50 + Math.sin(i * 0.3) * 20}%`,
+                  animationDelay: `${(i * 0.125) % 10}s`,
+                  transform: `scale(${0.4 + Math.sin(i * 0.5) * 0.6})`,
                 }}
               />
             ))}
           </div>
 
-          {/* Secondary wave layers */}
-          <div className="absolute top-1/3 left-0 w-full h-1">
-            {Array.from({ length: 30 }).map((_, i) => (
+          {/* Secondary wave layers for depth */}
+          <div className="absolute top-1/3 left-0 w-full h-20">
+            {Array.from({ length: 50 }).map((_, i) => (
               <div
                 key={`wave2-${i}`}
-                className="absolute w-0.5 h-0.5 rounded-full animate-[particleFlow_8s_linear_infinite]"
+                className="absolute w-0.5 h-0.5 rounded-full animate-[oceanParticle_14s_linear_infinite]"
                 style={{
                   background: i % 2 === 0 ? '#f159b2' : '#06b6d4',
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.sin(i * 0.8) * 15 + 50}%`,
-                  animationDelay: `${Math.random() * 8}s`,
+                  left: `${(i * 2) % 100}%`,
+                  top: `${50 + Math.sin(i * 0.4 + Math.PI/3) * 15}%`,
+                  animationDelay: `${(i * 0.28) % 14}s`,
+                  opacity: 0.7,
                 }}
               />
             ))}
           </div>
 
-          <div className="absolute top-2/3 left-0 w-full h-1">
-            {Array.from({ length: 40 }).map((_, i) => (
+          <div className="absolute top-2/3 left-0 w-full h-16">
+            {Array.from({ length: 60 }).map((_, i) => (
               <div
                 key={`wave3-${i}`}
-                className="absolute w-0.5 h-0.5 rounded-full animate-[particleFlow_7s_linear_infinite]"
+                className="absolute w-0.5 h-0.5 rounded-full animate-[oceanParticle_16s_linear_infinite]"
                 style={{
                   background: i % 2 === 0 ? '#8b5cf6' : '#06b6d4',
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.sin(i * 1.2) * 10 + 50}%`,
-                  animationDelay: `${Math.random() * 7}s`,
+                  left: `${(i * 1.67) % 100}%`,
+                  top: `${50 + Math.sin(i * 0.5 + Math.PI/6) * 12}%`,
+                  animationDelay: `${(i * 0.267) % 16}s`,
+                  opacity: 0.5,
                 }}
               />
             ))}
           </div>
 
-          {/* Flowing gradient waves */}
-          <div className="absolute top-1/4 left-0 w-full h-8 bg-gradient-to-r from-transparent via-[#f159b2]/30 to-transparent transform rotate-2 animate-[flowingWave_12s_ease-in-out_infinite]"></div>
-          <div className="absolute top-3/4 left-0 w-full h-6 bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent transform -rotate-1 animate-[flowingWave_15s_ease-in-out_infinite_reverse]"></div>
+          {/* Flowing gradient waves for ocean effect */}
+          <div className="absolute top-1/4 left-0 w-full h-12 bg-gradient-to-r from-transparent via-[#f159b2]/20 to-transparent transform rotate-1 animate-[flowingOcean_18s_ease-in-out_infinite]"></div>
+          <div className="absolute top-3/4 left-0 w-full h-8 bg-gradient-to-r from-transparent via-cyan-400/15 to-transparent transform -rotate-1 animate-[flowingOcean_22s_ease-in-out_infinite_reverse]"></div>
         </div>
       </div>
 
@@ -164,46 +166,69 @@ const EfficiencySection = () => {
 
       <style dangerouslySetInnerHTML={{
         __html: `
-          @keyframes waveFlow {
+          @keyframes oceanWave {
             0%, 100% {
-              transform: translateX(-100%) scaleY(1);
+              transform: translateX(-120%) scaleY(1) skewX(0deg);
               opacity: 0;
             }
-            20% {
-              opacity: 0.8;
+            15% {
+              opacity: 0.6;
             }
             50% {
-              transform: translateX(50%) scaleY(1.5);
+              transform: translateX(20%) scaleY(1.8) skewX(2deg);
               opacity: 1;
             }
-            80% {
-              opacity: 0.8;
+            85% {
+              opacity: 0.6;
             }
           }
           
-          @keyframes particleFlow {
+          @keyframes oceanParticle {
             0% {
-              transform: translateX(-20px) translateY(0px);
+              transform: translateX(-40px) translateY(0px) scale(0.5);
               opacity: 0;
+            }
+            5% {
+              opacity: 0.8;
             }
             10% {
+              transform: translateX(10vw) translateY(${() => Math.sin(0.1) * 15}px) scale(1);
               opacity: 1;
             }
-            90% {
-              opacity: 1;
+            25% {
+              transform: translateX(25vw) translateY(${() => Math.sin(0.25) * 20}px) scale(0.8);
+            }
+            50% {
+              transform: translateX(50vw) translateY(${() => Math.sin(0.5) * 25}px) scale(1.2);
+            }
+            75% {
+              transform: translateX(75vw) translateY(${() => Math.sin(0.75) * 18}px) scale(0.9);
+            }
+            95% {
+              opacity: 0.8;
             }
             100% {
-              transform: translateX(calc(100vw + 20px)) translateY(-10px);
+              transform: translateX(calc(100vw + 40px)) translateY(${() => Math.sin(1) * 10}px) scale(0.3);
               opacity: 0;
             }
           }
           
-          @keyframes flowingWave {
+          @keyframes flowingOcean {
             0%, 100% {
-              transform: translateX(-100%) rotate(2deg) scaleY(1);
+              transform: translateX(-150%) rotate(1deg) scaleY(1) scaleX(0.8);
+              opacity: 0.3;
+            }
+            25% {
+              transform: translateX(-50%) rotate(2deg) scaleY(1.4) scaleX(1.1);
+              opacity: 0.7;
             }
             50% {
-              transform: translateX(100%) rotate(2deg) scaleY(1.2);
+              transform: translateX(50%) rotate(1deg) scaleY(1.8) scaleX(1.3);
+              opacity: 1;
+            }
+            75% {
+              transform: translateX(100%) rotate(0deg) scaleY(1.2) scaleX(1);
+              opacity: 0.6;
             }
           }
         `
