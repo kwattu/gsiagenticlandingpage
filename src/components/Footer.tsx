@@ -12,7 +12,7 @@ const Footer = () => {
               className="h-8 mb-4"
             />
             <p className="text-gray-400 max-w-md">
-              Agentic AI: Intelligence in Motion
+              Agentic AI Solutions: Intelligence in Motion
             </p>
           </div>
 
