@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -11,7 +12,11 @@ const ContactSection = () => {
             A smarter path, just in 30 minutes. Book a discovery session. Leave with 2-3 pilot-ready AI ideas.
           </p>
           
-          <Button size="lg" className="bg-[#dcf448] hover:bg-[#dcf448]/80 text-black text-lg px-8 py-4 group">
+          <Button 
+            size="lg" 
+            className="bg-[#dcf448] hover:bg-[#dcf448]/80 text-black text-lg px-8 py-4 group"
+            onClick={() => window.open('https://calendly.com/jrrodrigues/30min', '_blank')}
+          >
             Get 2-3 pilot-ready AI ideas!
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
