@@ -6,7 +6,7 @@ const ServicesSection = () => {
     <section id="services" className="py-20 bg-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Framework Container */}
-        <div className="bg-black border-4 border-[#f159b2] rounded-lg p-12">
+        <div className="bg-gray-900 rounded-lg p-12">
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-5xl md:text-6xl font-bold text-[#dcf448] mb-4">
