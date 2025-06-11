@@ -77,7 +77,7 @@ const ServicesSection = () => {
           </div>
 
           {/* Tactical Journey */}
-          <div className="mb-8">
+          <div className="mb-12">
             <h2 className="text-3xl font-bold text-[#f159b2] text-center mb-8">
               TACTICAL JOURNEY
             </h2>
@@ -99,7 +99,7 @@ const ServicesSection = () => {
           </div>
 
           {/* Footer Text */}
-          <div className="text-center">
+          <div className="text-center mt-16">
             <p className="text-white text-2xl leading-relaxed">
               This framework helps customers rapidly turn goals<br />
               into scalable AI solutions with lasting impact.
