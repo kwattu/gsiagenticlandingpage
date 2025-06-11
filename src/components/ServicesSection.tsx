@@ -3,18 +3,18 @@ import { ChevronRight } from "lucide-react";
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-20 bg-gray-900">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main Framework Container */}
-        <div 
-          className="bg-gray-900 rounded-lg p-12 relative overflow-hidden"
-          style={{
-            backgroundImage: `linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.85)), url('/lovable-uploads/048fc26f-c87a-4013-8a0f-4bef2a9aa0fa.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        >
+    <section id="services" className="py-20">
+      {/* Main Framework Container */}
+      <div 
+        className="bg-gray-900 p-12 relative overflow-hidden min-h-screen"
+        style={{
+          backgroundImage: `linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.85)), url('/lovable-uploads/048fc26f-c87a-4013-8a0f-4bef2a9aa0fa.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12 relative z-10">
             <h1 className="text-5xl md:text-6xl font-bold text-[#dcf448] mb-4">
