@@ -100,7 +100,7 @@ const ServicesSection = () => {
 
           {/* Footer Text */}
           <div className="text-center">
-            <p className="text-white text-xl leading-relaxed">
+            <p className="text-white text-2xl leading-relaxed">
               This framework helps customers rapidly turn goals<br />
               into scalable AI solutions with lasting impact.
             </p>
