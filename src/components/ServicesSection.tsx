@@ -43,8 +43,8 @@ const ServicesSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {/* Initiation */}
               <div className="text-center">
-                <h3 className="text-xl font-bold text-[#dcf448] mb-4">Initiation</h3>
-                <div className="text-white text-lg space-y-2">
+                <h3 className="text-2xl font-semibold text-[#dcf448] mb-4">Initiation</h3>
+                <div className="text-white text-2xl space-y-2">
                   <p>Vision</p>
                   <p>Alignment,</p>
                   <p>Stakeholder</p>
@@ -54,8 +54,8 @@ const ServicesSection = () => {
               
               {/* Development */}
               <div className="text-center">
-                <h3 className="text-xl font-bold text-[#dcf448] mb-4">Development</h3>
-                <div className="text-white text-lg space-y-2">
+                <h3 className="text-2xl font-semibold text-[#dcf448] mb-4">Development</h3>
+                <div className="text-white text-2xl space-y-2">
                   <p>AI Agent</p>
                   <p>Construction,</p>
                   <p>Feedback</p>
@@ -65,8 +65,8 @@ const ServicesSection = () => {
               
               {/* Optimization */}
               <div className="text-center">
-                <h3 className="text-xl font-bold text-[#dcf448] mb-4">Optimization</h3>
-                <div className="text-white text-lg space-y-2">
+                <h3 className="text-2xl font-semibold text-[#dcf448] mb-4">Optimization</h3>
+                <div className="text-white text-2xl space-y-2">
                   <p>Deployment,</p>
                   <p>Ongoing</p>
                   <p>Learning</p>
@@ -84,7 +84,7 @@ const ServicesSection = () => {
             
             {/* Journey Steps */}
             <div className="flex items-center justify-center bg-cyan-400 rounded-lg p-6 mb-8">
-              <div className="flex items-center space-x-6 text-black font-semibold text-lg">
+              <div className="flex items-center space-x-6 text-black font-semibold text-2xl">
                 <span>Discover</span>
                 <ChevronRight className="w-6 h-6" />
                 <span>Design</span>
