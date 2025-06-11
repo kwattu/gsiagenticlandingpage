@@ -3,7 +3,7 @@ import { ChevronRight } from "lucide-react";
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-20">
+    <section id="services">
       {/* Main Framework Container */}
       <div 
         className="bg-gray-900 p-12 relative overflow-hidden min-h-screen"
@@ -14,7 +14,7 @@ const ServicesSection = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto py-20">
           {/* Header */}
           <div className="text-center mb-12 relative z-10">
             <h1 className="text-5xl md:text-6xl font-bold text-[#dcf448] mb-4">
