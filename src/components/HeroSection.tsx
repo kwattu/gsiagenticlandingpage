@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -29,7 +30,7 @@ const HeroSection = () => {
                 className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-lg px-8 py-4 group"
                 onClick={() => window.open('https://calendly.com/jrrodrigues/30min', '_blank')}
               >
-                Get 2-3 pilot-ready AI ideas!
+                Book a Strategy Session and Get 2-3 pilot-ready AI ideas!
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
