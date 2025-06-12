@@ -1,5 +1,3 @@
-
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -28,11 +26,11 @@ const HeroSection = () => {
             <div className="mb-12">
               <Button 
                 size="lg" 
-                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-xl px-10 py-6 h-auto min-h-[4rem] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80 group"
+                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-2xl px-12 py-8 h-auto min-h-[5rem] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80 group"
                 onClick={() => window.open('https://calendly.com/jrrodrigues/30min', '_blank')}
               >
                 Get 2-3 pilot-ready AI ideas!
-                <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-4 h-7 w-7 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
           </div>
@@ -55,4 +53,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
