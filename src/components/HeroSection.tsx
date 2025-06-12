@@ -27,12 +27,12 @@ const HeroSection = () => {
             {/* CTA Button */}
             <div className="mb-12">
               <Button 
-                size="default" 
-                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white px-6 py-3 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80 group"
+                size="lg" 
+                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-xl px-10 py-6 h-auto min-h-[4rem] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80 group"
                 onClick={() => window.open('https://calendly.com/jrrodrigues/30min', '_blank')}
               >
                 Get 2-3 pilot-ready AI ideas!
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
           </div>
