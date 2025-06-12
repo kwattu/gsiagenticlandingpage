@@ -28,7 +28,7 @@ const HeroSection = () => {
             <div className="mb-12">
               <Button 
                 size="lg" 
-                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-xl px-12 py-8 h-auto min-h-[5rem] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80 group"
+                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-xl px-12 py-4 h-auto min-h-[3rem] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80 group"
                 onClick={() => window.open('https://calendly.com/jrrodrigues/30min', '_blank')}
               >
                 Get 2-3 pilot-ready AI ideas!
