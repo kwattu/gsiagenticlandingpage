@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -26,14 +27,11 @@ const HeroSection = () => {
             {/* CTA Button */}
             <div className="mb-12">
               <Button 
-                size="lg" 
-                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-lg px-8 py-4 h-auto min-h-[3rem] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80 group"
+                size="default" 
+                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white px-6 py-3 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80 group"
                 onClick={() => window.open('https://calendly.com/jrrodrigues/30min', '_blank')}
               >
-                <span className="text-center">
-                  Book a Strategy Session<br />and
-                  Get 2-3 pilot-ready AI ideas!
-                </span>
+                Get 2-3 pilot-ready AI ideas!
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
@@ -57,3 +55,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
