@@ -27,11 +27,12 @@ const HeroSection = () => {
             <div className="mb-12">
               <Button 
                 size="lg" 
-                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-lg px-10 py-6 h-auto min-h-[4rem] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80 group"
+                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-lg px-8 py-4 h-auto min-h-[3rem] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80 group"
                 onClick={() => window.open('https://calendly.com/jrrodrigues/30min', '_blank')}
               >
                 <span className="text-center">
-                  Book a Strategy Session and<br />Get 2-3 pilot-ready AI ideas!
+                  Book a Strategy Session<br />and
+                  Get 2-3 pilot-ready AI ideas!
                 </span>
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
