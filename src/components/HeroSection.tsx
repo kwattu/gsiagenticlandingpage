@@ -1,6 +1,4 @@
 
-
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -29,7 +27,7 @@ const HeroSection = () => {
             <div className="mb-12">
               <Button 
                 size="lg" 
-                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-lg px-10 py-6 h-auto min-h-[4rem] group"
+                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-lg px-10 py-6 h-auto min-h-[4rem] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80 group"
                 onClick={() => window.open('https://calendly.com/jrrodrigues/30min', '_blank')}
               >
                 <span className="text-center">
@@ -58,5 +56,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
-
