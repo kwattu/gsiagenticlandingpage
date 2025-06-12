@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -18,7 +19,7 @@ const HeroSection = () => {
               We build intelligent systems that act—autonomously, instantly, and meaningfully.
             </p>
 
-            <p className="text-lg text-gray-400 mb-8">
+            <p className="text-lg text-gray-400 mb-12">
               From robotics to intelligent workflows, we design AI systems that don't just analyze data—they act on it. Our agentic AI solutions make real-time decisions, adapt to change, and deliver measurable outcomes without constant oversight.
             </p>
 
