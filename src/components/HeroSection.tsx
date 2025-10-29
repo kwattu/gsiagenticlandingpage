@@ -24,17 +24,11 @@ const HeroSection = () => {
               Traditional AI gives you insights. Our agentic AI takes action. From robotics to enterprise workflows, we deploy intelligent systems that operate independently, learn continuously, and deliver measurable ROI from day one.
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            {/* CTA Button */}
+            <div className="mb-12">
               <Button 
                 size="lg" 
                 className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-lg px-8 py-4 h-auto min-h-[3rem] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80"
-              >
-                See How Agentic AI Works
-              </Button>
-              <Button 
-                size="lg" 
-                className="bg-transparent hover:bg-[#f159b2]/10 text-white text-lg px-8 py-4 h-auto min-h-[3rem] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-white/20 hover:border-[#f159b2]/50"
                 onClick={() => window.open('https://calendly.com/jrrodrigues/30min', '_blank')}
               >
                 Book Your Consultation
