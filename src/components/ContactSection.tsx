@@ -9,7 +9,7 @@ const ContactSection = () => {
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">Ready to go from Dashboards to Decisions?</h2>
           <p className="text-xl text-black max-w-3xl mx-auto mb-8">
-            A smarter path, just in 30 minutes. Book a discovery session. Leave with 2-3 pilot-ready AI ideas.
+            A smarter path in just 30 minutes. Book a discovery session. Leave with 2-3 pilot-ready AI ideas.
           </p>
           
           <Button 
