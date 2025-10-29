@@ -11,11 +11,11 @@ const AboutSection = () => {
             Leading the Agentic AI Era
           </h2>
           
-          <div className="grid lg:grid-cols-2 gap-4 items-start -ml-56">
+          <div className="grid lg:grid-cols-2 gap-2 items-start -ml-56">
             <img 
               src="/lovable-uploads/972f9b43-19f5-4db4-a3a4-e6f5cd6a413b.png" 
               alt="NASA Logo" 
-              className="h-96 w-96 object-contain mx-auto -mt-24"
+              className="h-96 w-96 object-contain -mt-24"
             />
             
             <div className="text-left">
