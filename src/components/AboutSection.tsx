@@ -11,7 +11,7 @@ const AboutSection = () => {
             Leading the Agentic AI Era
           </h2>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-start -ml-56">
+          <div className="grid lg:grid-cols-2 gap-4 items-start -ml-56">
             <img 
               src="/lovable-uploads/972f9b43-19f5-4db4-a3a4-e6f5cd6a413b.png" 
               alt="NASA Logo" 
