@@ -18,7 +18,7 @@ const AboutSection = () => {
               className="h-96 w-96 object-contain mx-auto -mt-24"
             />
             
-            <div className="text-left ml-48">
+            <div className="text-left -ml-48">
               <p className="text-lg text-gray-800 leading-relaxed mb-6">
                 <strong className="text-gray-900">NASA and industry-leading companies</strong> trust Geisel Software for AI that drives real-world results—built on decades of expertise in software, robotics, and automation.
               </p>
