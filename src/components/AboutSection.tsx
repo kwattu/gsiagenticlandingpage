@@ -11,14 +11,14 @@ const AboutSection = () => {
             Leading the Agentic AI Era
           </h2>
           
-          <div className="flex items-start gap-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <img 
               src="/lovable-uploads/972f9b43-19f5-4db4-a3a4-e6f5cd6a413b.png" 
               alt="NASA Logo" 
-              className="h-96 w-96 object-contain flex-shrink-0 -mt-24"
+              className="h-96 w-96 object-contain mx-auto -mt-24"
             />
             
-            <div className="text-left flex-1">
+            <div className="text-left">
               <p className="text-lg text-gray-800 leading-relaxed mb-6">
                 <strong className="text-gray-900">NASA and industry-leading companies</strong> trust Geisel Software for AI that drives real-world results—built on decades of expertise in software, robotics, and automation.
               </p>
