@@ -17,7 +17,7 @@ const ContactSection = () => {
             className="bg-[#dcf448] hover:bg-[#dcf448]/80 text-black text-lg px-8 py-4 group"
             onClick={() => window.open('https://calendly.com/jrrodrigues/30min', '_blank')}
           >
-            Get 2-3 pilot-ready AI ideas!
+            Book A Discovery Session
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
