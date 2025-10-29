@@ -12,8 +12,7 @@ const HeroSection = () => {
           <div>
             {/* Main Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              <span className="block text-[#f159b2]">Agentic AI That Acts</span>
-              While Your Competition Analyzes
+              Agentic AI That Acts While Your Competition Analyzes
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
