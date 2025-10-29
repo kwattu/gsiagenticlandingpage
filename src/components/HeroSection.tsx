@@ -12,27 +12,32 @@ const HeroSection = () => {
           <div>
             {/* Main Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Your Data Holds Untapped Potential.
-              <span className="block text-[#f159b2]">We Build AI That Unleashes It.</span>
+              <span className="block text-[#f159b2]">Agentic AI That Acts</span>
+              While Your Competition Analyzes
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              We build intelligent systems that act—autonomously, instantly, and meaningfully.
+              Geisel Software builds autonomous agents that make split-second decisions, execute complex workflows, and adapt in real-time—no human intervention required.
             </p>
 
             <p className="text-lg text-gray-400 mb-12">
-              From robotics to intelligent workflows, we design AI systems that don't just analyze data—they act on it. Our agentic AI solutions make real-time decisions, adapt to change, and deliver measurable outcomes without constant oversight.
+              Traditional AI gives you insights. Our agentic AI takes action. From robotics to enterprise workflows, we deploy intelligent systems that operate independently, learn continuously, and deliver measurable ROI from day one.
             </p>
 
-            {/* CTA Button */}
-            <div className="mb-12">
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button 
                 size="lg" 
-                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-xl px-12 py-4 h-auto min-h-[3rem] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80 group"
+                className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-lg px-8 py-4 h-auto min-h-[3rem] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80"
+              >
+                See How Agentic AI Works
+              </Button>
+              <Button 
+                size="lg" 
+                className="bg-transparent hover:bg-[#f159b2]/10 text-white text-lg px-8 py-4 h-auto min-h-[3rem] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-white/20 hover:border-[#f159b2]/50"
                 onClick={() => window.open('https://calendly.com/jrrodrigues/30min', '_blank')}
               >
-                Get 2-3 pilot-ready AI ideas!
-                <ArrowRight className="ml-4 h-7 w-7 group-hover:translate-x-1 transition-transform" />
+                Book Your Consultation
               </Button>
             </div>
           </div>
