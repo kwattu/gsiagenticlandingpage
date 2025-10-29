@@ -12,7 +12,7 @@ const HeroSection = () => {
           <div>
             {/* Main Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Agentic AI That Acts While Your Competition Analyzes
+              Agentic AI That <span style={{ color: '#dcf448' }}>Acts</span> While Your Competition <span style={{ color: '#dcf448' }}>Analyzes</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
