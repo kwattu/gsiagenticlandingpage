@@ -30,7 +30,7 @@ const HeroSection = () => {
                 className="bg-[#f159b2] hover:bg-[#f159b2]/80 text-white text-lg px-8 py-4 h-auto min-h-[3rem] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-[#f159b2] hover:border-[#f159b2]/80"
                 onClick={() => window.open('https://calendly.com/jrrodrigues/30min', '_blank')}
               >
-                See How Agentic AI Works. Book a Demo.
+                Schedule an Agentic AI Strategy Session
               </Button>
             </div>
           </div>
